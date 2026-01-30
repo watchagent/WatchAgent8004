@@ -152,8 +152,8 @@ def deploy_contracts(
     # Setup Web3
     w3 = Web3(Web3.HTTPProvider(rpc_url))
     
-    if not w3.is_connected():
-        raise Exception("Failed to connect to blockchain")
+    # if not w3.is_connected():
+    #     raise Exception("Failed to connect to blockchain")
     
     # Setup account
     if not private_key:
