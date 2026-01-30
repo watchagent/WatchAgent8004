@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Environment
+.env
+.env.local
+
+# Data
+data/
+*.json
+!contracts/foundry.toml
+!package.json
+!tsconfig.json
+
+# Contracts
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+contracts/lib/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Distribution
+dist/
+build/
+*.egg-info/

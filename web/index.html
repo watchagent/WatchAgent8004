@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch8004 - ERC-8004 AI Agent Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🤖 Watch8004</h1>
+                <p class="subtitle">ERC-8004 Trustless AI Agent Dashboard</p>
+            </div>
+            <div class="network-status" id="networkStatus">
+                <span class="status-dot"></span>
+                <span id="networkName">Disconnected</span>
+            </div>
+        </header>
+
+        <!-- Agent Info -->
+        <section class="section">
+            <h2>Agent Information</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-label">Agent ID</div>
+                    <div class="info-value" id="agentId">Not Registered</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-label">Domain</div>
+                    <div class="info-value" id="agentDomain">watch8004.example.com</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-label">Wallet Address</div>
+                    <div class="info-value" id="walletAddress">0x0000...0000</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-label">Status</div>
+                    <div class="info-value">
+                        <span class="badge badge-success" id="agentStatus">Active</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capabilities -->
+        <section class="section">
+            <h2>Capabilities</h2>
+            <div class="capabilities-list" id="capabilitiesList">
+                <span class="capability-badge">Market Analysis</span>
+                <span class="capability-badge">Trend Detection</span>
+                <span class="capability-badge">Risk Assessment</span>
+                <span class="capability-badge">Validation Service</span>
+            </div>
+        </section>
+
+        <!-- Reputation -->
+        <section class="section">
+            <h2>Reputation & Validation</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Reputation Score</div>
+                        <div class="stat-value" id="reputationScore">--</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Validation Score</div>
+                        <div class="stat-value" id="validationScore">--</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Total Analyses</div>
+                        <div class="stat-value" id="totalAnalyses">0</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🔍</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Validations</div>
+                        <div class="stat-value" id="totalValidations">0</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Activity -->
+        <section class="section">
+            <h2>Recent Activity</h2>
+            <div class="activity-list" id="activityList">
+                <div class="activity-item">
+                    <div class="activity-icon">📝</div>
+                    <div class="activity-content">
+                        <div class="activity-title">Agent Registered</div>
+                        <div class="activity-time">Just now</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Actions -->
+        <section class="section">
+            <h2>Quick Actions</h2>
+            <div class="actions-grid">
+                <button class="action-btn" onclick="performAnalysis()">
+                    <span class="btn-icon">📊</span>
+                    Perform Analysis
+                </button>
+                <button class="action-btn" onclick="requestValidation()">
+                    <span class="btn-icon">🔍</span>
+                    Request Validation
+                </button>
+                <button class="action-btn" onclick="viewReputation()">
+                    <span class="btn-icon">⭐</span>
+                    View Reputation
+                </button>
+                <button class="action-btn" onclick="exportData()">
+                    <span class="btn-icon">💾</span>
+                    Export Data
+                </button>
+            </div>
+        </section>
+
+        <!-- Registry Contracts -->
+        <section class="section">
+            <h2>ERC-8004 Registries</h2>
+            <div class="registry-list">
+                <div class="registry-item">
+                    <div class="registry-name">Identity Registry</div>
+                    <div class="registry-address" id="identityRegistry">Not deployed</div>
+                </div>
+                <div class="registry-item">
+                    <div class="registry-name">Reputation Registry</div>
+                    <div class="registry-address" id="reputationRegistry">Not deployed</div>
+                </div>
+                <div class="registry-item">
+                    <div class="registry-name">Validation Registry</div>
+                    <div class="registry-address" id="validationRegistry">Not deployed</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Watch8004 - ERC-8004 Trustless AI Agent</p>
+            <p class="footer-links">
+                <a href="https://eips.ethereum.org/EIPS/eip-8004" target="_blank">ERC-8004 Spec</a>
+                <span>•</span>
+                <a href="https://8004.org" target="_blank">8004.org</a>
+                <span>•</span>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
